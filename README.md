@@ -1,4 +1,6 @@
-[English](#english) | [中文](#中文)
+<p align="center">
+  <a href="#english">English</a> | <a href="#中文">中文</a>
+</p>
 
 ---
 
@@ -70,6 +72,10 @@ MIT
 ---
 
 <a name="中文"></a>
+
+<p align="center">
+  <a href="#english">English</a> | <a href="#中文">中文</a>
+</p>
 
 # spark
 

@@ -1,3 +1,9 @@
+[English](#english) | [中文](#中文)
+
+---
+
+<a name="english"></a>
+
 # spark
 
 Clarify vague ideas before planning — works with any AI, any platform.
@@ -56,6 +62,70 @@ Spark:  What's the simplest possible version of this?
 - You keep saying "I have an idea" but never do anything with it
 
 **Not for:** ideas already clear enough to spec, debugging, or implementation work.
+
+## License
+
+MIT
+
+---
+
+<a name="中文"></a>
+
+# spark
+
+**闪念胶囊 AI 版** — 有了念头，立刻召唤专业顾问团，用提问代替建议，把模糊想法聊清楚再开始规划。
+
+支持任何 AI、任何平台、任何语言。
+
+## 它做什么
+
+1. 识别念头所属领域（软件产品 / 商业 / 创意 / 研究）
+2. 一句话拉起对应的顾问团队
+3. 每次只问一个问题——不给建议，不写方案，只问问题
+4. 想法清晰后输出三行 brief：一句话定义 + 最大未知 + 第一步
+5. 把决定权还给你
+
+用什么语言说话，就用什么语言回答。
+
+## 在哪里都能用
+
+**Claude Code（原生 skill）：**
+```bash
+mkdir -p ~/.claude/skills/spark
+cp SKILL.md ~/.claude/skills/spark/SKILL.md
+```
+然后输入 `/spark`，或者说"用 spark 帮我想这个念头"。
+
+如果你安装了 [superpowers 插件](https://superpowers.so)，spark 结束后可以直接衔接 `superpowers:brainstorming` 进入规划。
+
+**Claude.ai / ChatGPT / Gemini / 其他 AI：**
+把 `SKILL.md` 的内容粘贴到对话开头，或存成 system prompt / 自定义指令。
+
+**通过 API 调用任何模型：**
+把 `SKILL.md` 的内容作为 system prompt 传入即可。
+
+## 示例
+
+```
+你：    我有个想法，想做一个帮人在手机上捕捉念头的 app
+Spark： 我们是你的产品顾问团队。第一个问题：
+        这解决的是你自己的问题，还是你观察到别人有这个问题？
+你：    我自己的——我经常有想法，但打开备忘录之前念头就消失了
+Spark： 这个东西最简单的版本长什么样？
+...
+
+【一句话定义】一个零摩擦的手机念头捕捉工具，给那些想法还没落笔就消失的人
+【最大未知】  Claude/ChatGPT 已经能做这件事，用户有没有理由专门装一个 app
+【最小下一步】在 iPhone 上把 Action Button 配置成直接打开 Claude 语音输入
+```
+
+## 什么时候用
+
+- 你有个模糊念头，不知道从哪里开始
+- 想在开始规划之前先把思路理清楚
+- 你总是说"我有个想法"，但从来没有下文
+
+**不适合：** 想法已经足够清晰可以写 spec、调试、或者实现工作。
 
 ## License
 

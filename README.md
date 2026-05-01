@@ -23,6 +23,8 @@ cp SKILL.md ~/.claude/skills/spark/SKILL.md
 ```
 Then trigger with `/spark` or say *"use spark to think through this idea."*
 
+If you have the [superpowers plugin](https://superpowers.so) installed, the handoff at the end of a spark session will naturally chain into `superpowers:brainstorming`.
+
 **Claude.ai / ChatGPT / Gemini / any other AI:**
 Copy the contents of `SKILL.md` and paste it at the start of a conversation, or save it as a system prompt / custom instruction. The prompt works with any model.
 

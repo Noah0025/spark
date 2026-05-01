@@ -23,6 +23,8 @@ cp SKILL.md ~/.claude/skills/spark/SKILL.md
 ```
 然后输入 `/spark`，或者说"用 spark 帮我想这个念头"。
 
+如果你安装了 [superpowers 插件](https://superpowers.so)，spark 结束后可以直接衔接 `superpowers:brainstorming` 进入规划。
+
 **Claude.ai / ChatGPT / Gemini / 其他 AI：**
 把 `SKILL.md` 的内容粘贴到对话开头，或存成 system prompt / 自定义指令。
 
